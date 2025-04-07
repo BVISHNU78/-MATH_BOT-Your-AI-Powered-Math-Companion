@@ -1,0 +1,4 @@
+llm-axe                                  1.1.9
+ollama                                   0.4.7
+chatollama                               0.2.13
+customtkinter                            5.2.2
