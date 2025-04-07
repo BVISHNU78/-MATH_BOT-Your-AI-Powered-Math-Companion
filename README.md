@@ -1,4 +1,4 @@
-# -MATH_BOT-Your-AI-Powered-Math-Companion
+# MATH_BOT-Your-AI-Powered-Math-Companion
 MATH_BOT – Your AI-Powered Math Companion
 🤖 MATH_BOT – Your AI-Powered Math Companion
 MATH_BOT is a smart, interactive chatbot designed to assist users with all things mathematics — from solving equations and proving theorems to exploring real-world math applications. Powered by local LLMs via Ollama and enhanced with internet search (optional), MATH_BOT delivers instant, intelligent math help in a beautiful desktop GUI.
