@@ -26,3 +26,6 @@ Anyone needing quick math support!
 ![Screenshot 2025-04-07 221109](https://github.com/user-attachments/assets/1ab0e3b1-ee94-4606-a139-4e324203b699)
 
 ![Screenshot 2025-04-07 222226](https://github.com/user-attachments/assets/1b9d3bbe-f584-423a-9474-32396f90e152)
+![images](https://github.com/user-attachments/assets/e683daba-cc9d-45b3-b3da-318eea6927a9)
+*)use of CustomTkinter for UI A modern and customizable python UI-library based on Tkinter
+*)CustomTkinter is a python desktop UI-library based on Tkinter, which provides modern looking and fully customizable widgets. With CustomTkinter you'll get a consistent look across all desktop platforms (Windows, macOS, Linux).
