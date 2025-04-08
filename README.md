@@ -4,8 +4,7 @@ MATH_BOT – Your AI-Powered Math Companion
 MATH_BOT is a smart, interactive chatbot designed to assist users with all things mathematics — from solving equations and proving theorems to exploring real-world math applications. Powered by local LLMs via Ollama and enhanced with internet search (optional), MATH_BOT delivers instant, intelligent math help in a beautiful desktop GUI.
 
 
-
-✨ Features:
+ Features:
 🧮 Solve Math 
 Problems – Algebra, Calculus, Geometry, Trigonometry, and more
 
@@ -22,9 +21,14 @@ Problems – Algebra, Calculus, Geometry, Trigonometry, and more
 🧑‍🏫 Use Cases:
 Students doing homework
 
+![Screenshot 2025-04-08 224136](https://github.com/user-attachments/assets/c2e2020e-c7c1-4b33-929f-af0c2c7b610f)
+
 Teachers explaining concepts
 
+![Screenshot 2025-04-08 224121](https://github.com/user-attachments/assets/00a266b1-dc4e-456e-b52f-4ac1c799fa19)
+
 Self-learners exploring advanced math
+
 Anyone needing quick math support
 
 
@@ -37,3 +41,4 @@ Anyone needing quick math support
 *)use of CustomTkinter for UI A modern and customizable python UI-library based on Tkinter
 
 *)CustomTkinter is a python desktop UI-library based on Tkinter, which provides modern looking and fully customizable widgets. With CustomTkinter you'll get a consistent look across all desktop platforms (Windows, macOS, Linux).
+
