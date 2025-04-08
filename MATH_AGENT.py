@@ -1,7 +1,7 @@
 import customtkinter as ctk
 import ollama
 from llm_axe import OnlineAgent, OllamaChat
-
+from customtkinter import CTkInputDialog
 ctk.set_appearance_mode("Dark")
 ctk.set_default_color_theme("blue")
 
@@ -22,7 +22,6 @@ response = ollama.chat(model=model_name, messages=messages)
 bot_reply = response["message"]["content"]
 messages.append({"role": "assistant", "content": bot_reply})
 
-
 frame = ctk.CTkFrame(master=app)
 frame.pack(padx=10, pady=10, fill="both", expand=True)
 
@@ -39,11 +38,9 @@ def send_message():
     if not user_input:
         return
 
-    # Show user input
     chatbox.configure(state="normal")
     chatbox.insert("end", f"🧑 You: {user_input}\n")
     chatbox.see("end")
-
     entry.delete(0, "end")
     messages.append({"role": "user", "content": user_input})
 
@@ -63,8 +60,36 @@ def send_message():
     chatbox.configure(state="disabled")
     chatbox.see("end")
 
+def generate_story():
+    input_dialog = CTkInputDialog(text="Enter a title or prompt for the math story:", title="📘 Math Story Prompt")
+    user_prompt = input_dialog.get_input()
+
+    if not user_prompt:
+        return  
+
+    math_texts = [msg["content"] for msg in messages if msg["role"] in ["user", "assistant"]]
+    combined = "\n".join(math_texts)
+
+    story_prompt = (
+        f"Using this conversation filled with math questions and answers:\n\n{combined}\n\n"
+        f"Create a short, fun story based on this. Instruction: {user_prompt}"
+    )
+
+    story_response = ollama.chat(model=model_name, messages=[{"role": "user", "content": story_prompt}])
+    story = story_response["message"]["content"]
+
+
+    chatbox.configure(state="normal")
+    chatbox.insert("end", f"📘 MATH_BOT (Story Mode):\n{story}\n\n")
+    chatbox.configure(state="disabled")
+    chatbox.see("end")
+
+
 send_btn = ctk.CTkButton(app, text="Send", command=send_message)
-send_btn.pack(padx=10, pady=(0, 20))
+send_btn.pack(padx=10, pady=(0, 10))
+
+story_btn = ctk.CTkButton(app, text="📘 Generate Story", command=generate_story)
+story_btn.pack(padx=10, pady=(0, 20))
 
 entry.bind("<Return>", lambda e: send_message())
 
