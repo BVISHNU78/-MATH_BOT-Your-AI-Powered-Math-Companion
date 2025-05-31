@@ -42,3 +42,29 @@ Anyone needing quick math support
 
 *)CustomTkinter is a python desktop UI-library based on Tkinter, which provides modern looking and fully customizable widgets. With CustomTkinter you'll get a consistent look across all desktop platforms (Windows, macOS, Linux).
 
+# MATH_BOT – Your AI-Powered Math Companion
+
+An intelligent AI chatbot that helps solve math problems, explains concepts, and assists with computations in real-time.
+
+## Features
+
+- Solve algebra, calculus, geometry problems  
+- Step-by-step explanations  
+- Support for complex mathematical expressions  
+- User-friendly chat interface  
+- Fast and accurate responses  
+
+## Tech Stack
+
+- Python 3.x  
+- OpenAI GPT API  
+- Streamlit for UI  
+- SymPy for mathematical computations  
+
+## Installation
+
+```bash
+git clone https://github.com/BVISHNU78/-MATH_BOT-Your-AI-Powered-Math-Companion.git
+cd -MATH_BOT-Your-AI-Powered-Math-Companion
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
