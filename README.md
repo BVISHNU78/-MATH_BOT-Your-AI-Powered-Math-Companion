@@ -68,3 +68,4 @@ git clone https://github.com/BVISHNU78/-MATH_BOT-Your-AI-Powered-Math-Companion.
 cd -MATH_BOT-Your-AI-Powered-Math-Companion
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r math_requriments.txt
